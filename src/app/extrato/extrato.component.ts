@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./extrato.component.scss']
 })
 export class ExtratoComponent implements OnInit {
-  @Input() transferencia: any;
+  @Input()
+  transferencias: any[] = [];
 
   constructor() { }
 
