@@ -5,24 +5,24 @@ import { Injectable } from '@angular/core';
 })
 export class TransferenciaService {
   private listaTransferencia: any[];
-  transferencias: any[] = [];
 
-constructor() {
-  this.listaTransferencia = [];
- }
- 
-get transferencia() {
-  return this.listaTransferencia;
-}
 
-adicionar(transferencia: any) {
-  this.hidratar(transferencia);
+  constructor() {
+   this.listaTransferencia = [];
+  }
 
-  this.listaTransferencia.push(transferencia);
-}
+  get transferencias() {
+    return this.listaTransferencia;
+  }
 
-private hidratar(transferencia: any) {
-  transferencia.data = new Date();
-}
+  adicionar(transferencia: any) {
+    this.hidratar(transferencia);
 
-}
+    this.listaTransferencia.push(transferencia);
+  }
+
+  private hidratar(transferencia: any) {
+    transferencia.data = new Date();
+  }
+
+  }
