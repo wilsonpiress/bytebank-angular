@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./nova-transferencia.component.scss'],
 })
 
-export class novaTransferenciaComponet {
+export class NovaTransferenciaComponent {
 
   @Output() aoTransferir = new EventEmitter<any>();
 
